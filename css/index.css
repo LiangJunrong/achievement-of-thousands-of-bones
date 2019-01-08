@@ -1,0 +1,140 @@
+/* 共用 */
+html, body {
+  height: 100%;
+}
+body {
+  background: url("../img/background.jpg") no-repeat center;
+  background-size: 100% 100%;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  -webkit-appearance: none;
+  border: 1px solid deepskyblue;
+  border-radius: 2px;
+  outline: none;
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background: url("../img/icon-checked.png") no-repeat center;
+  background-size: 100%;
+}
+.icon-recycle {
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-recycle.png") no-repeat center;
+  background-size: 100%;
+}
+.icon-delete {
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-delete.png") no-repeat center;
+  background-size: 100%;
+}
+.todo-title {
+  margin-top: 10px;
+  word-break: normal; 
+  width: 75%; 
+  display: block; 
+  white-space: pre-wrap;
+  word-wrap: break-word ;
+  overflow: hidden ;
+}
+
+/* 页面主体 */
+.main-container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 头部标题 */
+.header {
+  width: 100%;
+  height: 150px;
+  background: url("../img/title.png") no-repeat center;
+}
+
+/* 内容区 */
+.content {
+  text-align: center;
+}
+.content-input-todo {
+  height: 40px;
+}
+.content-input-todo input {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.content-input-todo button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 20px;
+  background: #36AF9E;
+  color: #fff;
+  outline: none;
+}
+.content-list {
+  display: flex;
+  margin-top: 30px;
+}
+.content-list div {
+  width: 380px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border: 15px solid transparent;
+  border-image: url("../img/border.png") 60 60 stretch;
+}
+.content-list div ul {
+  text-align: left;
+}
+.content-list div ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.content-list div ul li:hover {
+  cursor: pointer;
+}
+.content-list div ul li input[type="checkbox"] {
+  margin-right: 10px;
+}
+.content-list div ul li input[type="text"] {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  color: #000;
+  border-bottom: 1px solid #ccc;
+}
+/* 返回按钮 */
+.content-list-recycle-back {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-back.png") no-repeat center;
+  background-size: 100%;
+}
+
+/* 底部区 */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer a {
+  color: deepskyblue;
+}
+.footer a:hover {
+  color: deepskyblue;
+}
